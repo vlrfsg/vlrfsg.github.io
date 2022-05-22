@@ -1,0 +1,81 @@
+{.; ; (c.convertSbS8 (content))}
+
+{content; ;
+  ('
+    "<!DOCTYPE html>"
+    (hb.tagE "html" (' (hb.tagE "head" (head)) (hb.tagE "body" (body))))
+  )
+}
+
+{head; ;
+  ('
+    (hb.tagA "meta" (hb.attribute "charset" "UTF-8"))
+    (hb.tagA "meta" (hb.attribute "viewport" "width=device-width, initial-scale=1, maximum-scale=1"))
+    (hb.tagE "title" (' (u.title) " - ドイツ語"))
+    (hb.tagAE "script" (hb.attribute "src" "../script/main.js") "")
+    (hb.tagA "link" (' (hb.attribute "rel" "stylesheet") (hb.attribute "type" "text/css") (hb.attribute "href" "../style/style.css")))
+    (hb.tagA "link" (' (hb.attribute "rel" "stylesheet") (hb.attribute "media" "(max-width:800px)") (hb.attribute "type" "text/css") (hb.attribute "href" "../style/narrow.css")))
+  )
+}
+
+{body; ;
+  ('
+    (hb.tagCE "header" "hSide" (hb.tagCE "div" "hBack" (' (hb.tagACE "a" "hTitle" (hb.attribute "href" "../index.html") "初級ドイツ語") (h.linkList))))
+    (hb.tagCE "div" "dSide" (hb.tagCE "div" "dBack" (' (d.title) (d.content) (d.case))))
+    (hb.tagCE "footer" "fSide" (hb.tagCE "div" "fBack" (f.copyRight)))
+  )
+}
+
+{h.linkList; ;
+  ('
+    (h.linkList.element "動詞" "verb")
+    (h.linkList.element "名詞" "noun")
+  )
+}
+{h.linkList.element A B; ; (hb.tagACE "a" "hLink" (hb.attribute "href" (' "../" B "/" B ".html")) A)}
+{d.title; ; (hb.tagCE "article" "dTitleBack" (hb.tagCE "span" "dTitle" (u.title)))}
+{d.case; ;
+  (hb.tagCE "table"
+    "dCaseTable"
+    ('
+      (hb.tagE "tr" (' (hb.tagE "td" "性数格の表示") (hb.tagE "td" "Maskulinum") (hb.tagE "td" "Neutrum") (hb.tagE "td" "Femininum") (hb.tagE "td" "Plural")))
+      (hb.tagE "tr" (' (hb.tagE "td" "1格/主格/Nominativ") (hb.tagCE "td" "wM" "der Mensch") (hb.tagCE "td" "wN" "das Haus") (hb.tagCE "td" "wF" "die Tante") (hb.tagCE "td" "wP" "die Kinder")))
+      (hb.tagE "tr" (' (hb.tagCE "td" "wG" "2格/属格/Genitiv") (hb.tagCE "td" "wM wG" "des Menschen") (hb.tagCE "td" "wN wG" "des Hauses") (hb.tagCE "td" "wF wG" "der Tante") (hb.tagCE "td" "wP wG" "der Kinder")))
+      (hb.tagE "tr" (' (hb.tagCE "td" "wD" "3格/与格/Dativ") (hb.tagCE "td" "wM wD" "dem Menschen") (hb.tagCE "td" "wN wD" "dem Haus") (hb.tagCE "td" "wF wD" "der Tante") (hb.tagCE "td" "wP wD" "den Kindern")))
+      (hb.tagE "tr" (' (hb.tagCE "td" "wA" "4格/対格/Akkusativ") (hb.tagCE "td" "wM wA" "den Menschen") (hb.tagCE "td" "wN wA" "das Haus") (hb.tagCE "td" "wF wA" "die Tante") (hb.tagCE "td" "wP wA" "die Kinder")))
+    )
+  )
+}
+
+
+{f.copyRight; ; (hb.tagCE "span" "fCopyRight" "(C) 2022 vlrfsg")}
+
+
+{hb.attribute Name Value; ;
+  (?
+    (# Value)
+    (' " " Name "=\"" Value "\"")
+    (c.empty)
+  )
+}
+{hb.tag Tag; ; (' "<" Tag ">")}
+{hb.tagA Tag Attribute; ; (' "<" Tag Attribute ">")}
+{hb.tagAE Tag Attribute Content; ; (' "<" Tag Attribute ">" Content "</" Tag ">")}
+{hb.tagE Tag Content; ; (hb.tagAE Tag "" Content)}
+{hb.tagAC Tag Class Attribute; ; (hb.tagA Tag (' (hb.attribute "class" Class) Attribute))}
+{hb.tagACE Tag Class Attribute Content; ; (hb.tagAE Tag (' (hb.attribute "class" Class) Attribute) Content)}
+{hb.tagCE Tag Class Content; ; (hb.tagACE Tag Class "" Content)}
+{hb.concatenateClass A B; ;
+  ('
+    A
+    (? 
+      (&
+        (!= (c.getLengthSx A) 0)
+        (!= (c.getLengthSx B) 0)
+      )
+      " "
+      (c.empty)
+    )
+    B
+  )
+}

@@ -1,0 +1,172 @@
+antworten
+A antworten B+d; AがBに答える
+-Sie+f antwortet+r immer schnell.; 彼女はいつも素早く答える。
+
+arbeiten
+A arbeiten; Aは働く
+-Manche+pa arbeiten+r Tag und Nacht.; 昼夜の別なく働く人もいる。
+
+beeindrucken
+A beeindrucken B+a; AはBに感銘を与える
+-Seine>Größe+f beeindruckt+r ihn+ma .; その大きさは彼に感銘を与える。
+
+begrüßen
+A begrüßen B+a; AはBに挨拶する。
+-Sie+f begrüßt+r die>Eltern>ihres>Freundes+pa .; 彼女は、ボーイフレンドの両親に挨拶する。
+
+bekommen
+A bekommen B+a; AがBを得る
+
+besuchen
+A besuchen B+a; AはBを訪れる
+-Sebastian besucht+r den>Garten+ma .; Sebastianはその庭を訪れる。
+
+bleiben
+A bleiben; Aは変化や移動をせず留まる
+-Wir bleiben+r zu Hause.; 私たちは家に留まる。
+
+essen
+A essen B+a; AがBを食べる
+-Sie+f isst+r gern Fisch+ma .; 彼女は魚を好んで食べる。
+-Iss+r viel Obst+na !; 果物をたくさん食べなさい!
+A essen zu Mittag; Aは昼食を食べる
+-Essen+r wir zu Mittag!; お昼を食べましょう。
+
+fahren
+A fahren; A(車/列車/船など)が走る/航行する
+-Die>Autos+p fahren+r schnell.; あの車(複数)は速い。
+A fahren mit B+d; AはBに乗って移動する
+-Michael, fahr+r doch langsam!; Michael、ゆっくり運転してよ。 
+
+fehlen
+A fehlen B+d; AがBから欠けている
+-Was fehlt+r Ihnen+d ?; 症状は何ですか?
+
+geben
+A geben B+d C+a; AがBにCをあげる
+-Die>Proffesorin+f gibt+r jedem>Studenten+md einen>Rat+ma .; その教授は、どの生徒にも助言を与える。
+Es gibt A+a; Aがある
+-In Deutschland gibt+r es 16>Bundesländer+pa .; ドイツには16の州がある。
+-Es gibt+r einen>Teller+ma auf dem Tisch.; 机の上に1枚の皿がある。
+
+gefallen
+A gefallen B+d; BはAが気に入る
+-Die>Bluse+f gefällt+r mir+d; このブラウスいいですね。
+
+gehen
+A gehen; Aが行く
+-Ich gehe+r jetzt.; 今行くよ。
+-Sabine+f geht+r noch nicht nach Hause.; Sabineはまだ家に帰らない。
+Es geht A+d B; Aの調子はB(形容詞)である
+-Wie geht+r es Ihnen+d ?; お元気ですか?
+
+gehören
+A gehören B+d; AはBのものである/所属する
+-Seiner>Frau+fd gehört+r das>Haus+n .; その家は彼の妻のものです。
+
+haben
+A haben B+a; AはBを持っている
+-Ich habe+r dauernd>Kopfschmerzen+pa .; 頭痛が長引いています。
+-Ich habe+r keinen>Kugelschreiber+ma .; 私はボールペンを持っていません。
+-Jeder+m hat+r seine>Fehler+pa .; 誰にでも欠点はある。
+
+hören
+A hören B+a; AはBを聞く
+-Hör+r mal!; ちょっと聞いてよ。
+
+kennen
+A kennen B+a; AはBのことを知っている
+-Ich kenne+r einen>Professor+ma in Frankfurt.; 私はフランクフルトのある教授を知っている。
+
+kommen
+A kommen; Aは来る
+-Toni, komm+r bitte schnell!; Toni、お願い早く来て。
+A kommen aus B+d; AはB(地名)出身である。
+-Ich komme+r aus Frankfurt+nd .; 私はフランクフルト出身です。
+
+lernen
+A lernen B+a; AはBを勉強する
+-Japanisch+na lerne+r ich auch.; 私も日本語を勉強しています。
+
+lieben
+A lieben B+a; AはBを愛している
+-Meine>Schwester+f liebt+r deinen>Bruder+ma .; 私の姉(妹)は、君の兄(弟)を愛している。
+
+machen
+A machen B+a; AはBをする
+-Ich mache+r nur einen>Spaziergang+ma .; 散歩に行くだけだよ。
+A machen B+a; AはBを作る
+Das macht nichts+na; 大丈夫です。
+-Macht+r nichts+na .; 問題ないですよ。
+
+melken
+A melken B+a; Bから乳を搾る
+-Jeden Tag um 5 Uhr die>Kühe+pa melken+r ?; 毎日5時に牛乳を搾るだって?
+
+nehmen
+A nehmen B+a; AはBを取る/掴む
+-Nimmst+r du das+a ?; 君はそれを選ぶの?
+-Ich nehme+r jeden Tag Medikamente+pa .; 私は毎日薬を飲む。
+-Nehmen+r Sie ein>Bad+na .; 入浴してください。
+
+öffnen
+A öffnen B+a; AはBを開ける
+-Öffne+r schnell das>Paket+na !; すぐにその包みを開けなさい。
+
+sagen
+A sagen B+d C+a; AはBにCと言う 
+-Er sagt+r mir+d nichts+a .; 彼は私に何も言わない。
+
+schenken
+A schenken B+d C+a; AはBにCを贈る
+-Wir+p schenken+r unseren>Kindern+pd Bücher+pa .; 私たちは、子供たちに本をプレゼントする。
+
+sein
+A sein B; AはBである
+-Sie+f ist+r Studentinnen+f .; 彼女は大学生だ。
+-Sei+r pünktlich!; 時間を守りなさい。
+
+spielen
+A spielen B+a; AはBで遊ぶ
+A spielen B+a; AはB(スポーツ)をする
+-Spielen+r wir Tennis+na; テニスをしよう。
+A spielen B+a; AはB(楽器)を演奏する(定冠詞は不要)
+-Irene spielt+r gerne Klavier+na .; Ireneはピアノを弾くのが好きだ。
+
+stimmen
+A stimmen; Aが当てはまる
+-Etwas+n stimmt+r nicht.; 何かがおかしい。
+
+trauen
+A trauen B+d; AはBを信用する
+-Er+m traut+r niemandem+d .; 彼は誰をも信用しない。
+
+tun
+Es tut A+d leid; Aにとって残念である
+-Tut+r mir+d leid.; 残念です。
+A tut B+d weh; BのAが痛む
+-Und der>Hals+m tut+r mir+d weh.; そして首が痛みます。
+
+warten
+A warten; Aは待つ
+-Warte+r mal!; ちょっと待って!
+
+waschen
+A waschen B+a; AはBを洗う
+-Wascht+r die>Wäsche+pa !; 君たち、洗濯物を洗って!
+
+werden
+A werden B; AはBになる
+-Werde+r bald wieder gesund!; 早くまた元気になって。
+
+widersprechen
+A widersprechen B+d; AはBに異議を唱える、反対する
+-Widersprich+r doch nicht immer!; いつも口答えするのはやめなさい。
+
+wohnen
+A wohnen; Aは住む
+-Wohnen+r dein>Onkel>und>seine>Frau+p in diesem Dorf?; 君の伯(叔)父さん夫妻もその村に住んでいるの?
+
+
+
+

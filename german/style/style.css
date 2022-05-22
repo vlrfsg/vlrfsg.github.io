@@ -1,0 +1,288 @@
+html {
+  text-align: center;
+  font-size: 16px;
+  background-color: #F0F4F4;
+  color: #202020;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.hSide {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  position: sticky;
+  z-index: 6;
+  height: 7ex;
+  box-shadow: 0 0 4ex;
+  background-color: #F8FAFA;
+}
+
+.hBack {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.hTitle, .hLink {
+  margin: 0 0.5em;
+  padding: 1ex 0.5em;
+  min-width: 6em;
+  color: #202020;
+  border-radius: 0.5em;
+}
+
+.hTitle:hover, .hTitle:active, .hLink:hover, .hLink:active {
+  background-color: #E0E8E8;
+}
+
+.hTitle {
+  font-size: 28px;
+}
+
+.hLink {
+  font-size: 24px;
+}
+
+.dSide {
+  z-index: 4;
+  margin: 0;
+}
+
+.dBack {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 4ex 0;
+  background-color: #F8FAFA;
+}
+
+.dTitleBack {
+  margin: 1ex 1em 4ex;
+  padding: 0;
+  border-bottom: 1px solid #202020;
+}
+
+.dTitle {
+  font-size: 28px;
+}
+
+.dCaseTable {
+  margin: 1ex auto;
+}
+
+.dWord {
+  margin: 1ex 1em;
+}
+
+.dWordButtonBack {
+  margin: 1ex 1em;
+  padding: 0.5ex 0;
+  background-color: #A0E0F0;
+}
+
+.dWordButton {
+  margin: 0;
+  font-size: 20px;
+  min-width: 10em;
+  background-color: #F8FAFA;
+  border: none;
+}
+
+.dWordButton:hover, .dWordButton:active {
+  background-color: #E0F0F0;
+}
+
+.dWordTable {
+  display: none;
+  margin: 0 auto;
+  width: max-content;
+  border-left: 1px solid #202020;
+  border-top: 1px solid #202020;
+  border-collapse: collapse;
+}
+
+table.dWordTable td {
+  margin: 0;
+  border-bottom: 1px solid #202020;
+  border-right: 1px solid #202020;
+}
+
+.expanded > .dSentenceBack, .expanded > .dWordTable {
+  display: block;
+}
+
+.dSentenceBack {
+  display: none;
+  margin: 0 1em;
+  text-align: left;
+  border-bottom: 1px solid #202020;
+}
+
+.dSentence {
+  margin: 1ex 1em;
+  border-left: 4px solid #A0E0F0;
+  border-bottom: 2px solid #A0E0F0;
+}
+
+.dSentenceIndent {
+  margin-left: 2em;
+  border: none;
+}
+
+.dSentenceDeutsch {
+  margin: 0 1em;
+  min-width: 50%;
+}
+
+.dSentenceJapanisch {
+  background-color: #F0F4F4;
+}
+
+.fSide {
+  width: 100%;
+  margin: 0;
+  z-index: 4;
+}
+
+.fBack {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: #E0E4E4;
+}
+
+.fCopyRight {
+  margin: 1ex auto;
+  height: 6ex;
+}
+
+.wR {
+  border-bottom: 2px dotted #F08040;
+}
+
+.wM, .wN, .wF, .wP, .wG, .wD, .wA {
+  border-radius: 0.5ex;
+  padding: 0 0.2em;
+}
+
+.wG {
+  background-color: #A0A0A0;
+  color: #F8FAFA;
+}
+
+.wD {
+  background-color: #E0E0E0;
+}
+
+.wA {
+  background-color: #707070;
+  color: #F8FAFA;
+}
+
+.wM {
+  background-color: #99FFFF;
+}
+
+.wM.wG {
+  background-color: #66CCFF;
+  color: #F8FAFA;
+}
+
+.wM.wD {
+  background-color: #99BBFF;
+}
+
+.wM.wA {
+  background-color: #6666FF;
+  color: #F8FAFA;
+}
+
+.wN {
+  background-color: #CCFF99;
+}
+
+.wN.wG {
+  background-color: #80FF66;
+  color: #202020;
+}
+
+.wN.wD {
+  background-color: #99FFAA;
+}
+
+.wN.wA {
+  background-color: #66FFBB;
+  color: #202020;
+}
+
+.wF {
+  background-color: #FF9999;
+}
+
+.wF.wG {
+  background-color: #FF9966;
+  color: #202020;
+}
+
+.wF.wD {
+  background-color: #FFDD99;
+}
+
+.wF.wA {
+  background-color: #FFFF66;
+  color: #202020;
+}
+
+.wP {
+  background-color: #CC99FF;
+}
+
+.wP.wG {
+  background-color: #E566FF;
+  color: #F8FAFA;
+}
+
+.wP.wD {
+  background-color: #FF99EE;
+}
+
+.wP.wA {
+  background-color: #FF66BB;
+  color: #F8FAFA;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
