@@ -10,7 +10,7 @@
 {head; ;
   ('
     (hb.tagA "meta" (hb.attribute "charset" "UTF-8"))
-    (hb.tagA "meta" (hb.attribute "viewport" "width=device-width, initial-scale=1, maximum-scale=1"))
+    (hb.tagA "meta" (' (hb.attribute "name" "viewport") (hb.attribute "content" "width=device-width, initial-scale=1, maximum-scale=1")))
     (hb.tagE "title" (' (u.title) " - ドイツ語"))
     (hb.tagAE "script" (hb.attribute "src" "../script/main.js") "")
     (hb.tagA "link" (' (hb.attribute "rel" "stylesheet") (hb.attribute "type" "text/css") (hb.attribute "href" "../style/style.css")))

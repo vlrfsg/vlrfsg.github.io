@@ -6,6 +6,10 @@ arbeiten
 A arbeiten; Aは働く
 -Manche+pa arbeiten+r [Tag+ma]>und>[Nacht+fa]+t .; 昼夜の別なく働く人もいる。
 
+backen
+A backen B+a; AはB(パン/ケーキなど)を焼く
+-Warum+k bäckt+r Sarah einen>Kuchen+ma ?; なぜSarahはケーキを焼いているの?
+
 beeindrucken
 A beeindrucken B+a; AはBに感銘を与える
 -Seine>Größe+f beeindruckt+r ihn+ma .; その大きさは彼に感銘を与える。
