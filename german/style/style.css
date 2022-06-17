@@ -3,6 +3,7 @@ html {
   font-size: 16px;
   background-color: #F0F4F4;
   color: #202020;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
