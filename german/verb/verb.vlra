@@ -1,7 +1,8 @@
 {u.title; ; "動詞"}
 
 {u.list.txt; ; (c.regularizeNewLineSb (c.convertS8Sb (list.txt)) "\r")}
-{u.verb.tsv; ; (c.regularizeNewLineSb (c.convertS8Sb (verb.tsv)) "\r")}
+[{u.verb.tsv; ; (c.regularizeNewLineSb (c.convertS8Sb (verb.tsv)) "\r")}]
+{u.verb.tsv; ; (c.regularizeNewLineSb (verb.tsv) "\r")}
 
 {d.content; ;
   (u.process (u.list.txt) (: 0 64))
@@ -19,7 +20,7 @@
       ('
         "<article class=\"dWord\">"
         (hb.tagCE "div" "dWordButtonBack" (hb.tagACE "button" "dWordButton" (hb.attribute "onclick" "oc(this)") (> B 64)))
-        [(u.conjugation (> B 64))]
+        (u.conjugation (> B 64))
         "<div class=\"dSentenceBack\">"
       )
       (?
@@ -69,7 +70,7 @@
             )
             " "
           )
-          (c.empty)
+          (: 0 64)
         )
       )
       (hb.tagCE "span" "dSentenceJapanisch" (c.splitSx (c.getRangeSx A 1 (- (c.getLengthSx A) 1)) ";" 1))
@@ -79,7 +80,7 @@
 
 {u.conjugation A; ; (u.conjugation.table (u.conjugation.search (' (u.verb.tsv) "\r") A (c.empty)))}
 {u.conjugation.search A 16 B C; ;
-  (? (& (== A "\r") (c.compareStrict (c.splitSx C (: 9 16) 0) B)) C (c.empty));
+  (? (== A "\r") (? (c.compareStrict (c.splitSx C (: 9 16) 0) B) C (c.empty)) (c.empty));
   (? (== A "\r") (c.empty) (' C A))
 }
 {u.conjugation.table A; ;
@@ -89,7 +90,7 @@
       (hb.tagE "tr" (' (hb.tagE "td" "ich") (u.conjugation.element A 2) (u.conjugation.element A 7)))
       (hb.tagE "tr" (' (hb.tagE "td" "du") (u.conjugation.element A 3) (u.conjugation.element A 8)))
       (hb.tagE "tr" (' (hb.tagE "td" "er/sie/es") (u.conjugation.element A 4) (u.conjugation.element A 9)))
-      (hb.tagE "tr" (' (hb.tagE "td" "wir") (u.conjugation.element A 1) (u.conjugation.element A 6)))
+      (hb.tagE "tr" (' (hb.tagE "td" "wir/sie/Sie") (u.conjugation.element A 1) (u.conjugation.element A 6)))
       (hb.tagE "tr" (' (hb.tagE "td" "ihr") (u.conjugation.element A 5) (u.conjugation.element A 10)))
     )
   )
@@ -98,18 +99,93 @@
 
 {u.color A 16 B; ;
   (?
-    (& (== A " ") (!= (# B) 0))
-    ('
-      (?
-        (c.getLengthSx (c.splitSx B "+" 1))
-        (hb.tagCE "span" (u.color.recursion (c.splitSx B "+" 1)) (c.splitSx B "+" 0))
-        B
-      )
-      " "
-    )
+    (& (== A " ") (== (: B 8) 0))
+    (' (u.color.tag (u.color.get B 0 1)) " ")
     (c.empty)
   );
-  (? (== A " ") (c.empty) (' B (? (== A ">") " " A)))
+  ('
+    (?
+      (== (: B 8) 3)
+      (? (| (== A " ") (== A "]")) (c.empty) (' (u.color.get B 3 1) (? (!= A "[") (? (== A ">") " " A) "")))
+      (u.color.get B 3 1)
+    )
+    (?
+      (== (: B 8) 3)
+      (? (== A " ") (' (u.color.get B 3 0) (u.color.tag (u.color.get B 3 1)) " ") (? (== A "]") (c.empty) (u.color.get B 3 0)))
+      (u.color.get B 3 0)
+    )
+    (?
+      (== (: B 8) 2)
+      (? (| (== A " ") (== A "]")) (c.empty) (' (u.color.get B 2 1) (? (!= A "[") (? (== A ">") " " A) "")))
+      (' (u.color.get B 2 1) (? (& (== A "]") (== (: B 8) 3)) (' (u.color.get B 3 0) (u.color.tag (u.color.get B 3 1))) (c.empty)))
+    )
+    (?
+      (== (: B 8) 2)
+      (? (== A " ") (' (u.color.get B 2 0) (u.color.tag (u.color.get B 2 1)) " ") (? (== A "]") (c.empty) (u.color.get B 2 0)))
+      (u.color.get B 2 0)
+    )
+    (?
+      (== (: B 8) 1)
+      (? (| (== A " ") (== A "]")) (c.empty) (' (u.color.get B 1 1) (? (!= A "[") (? (== A ">") " " A) "")))
+      (' (u.color.get B 1 1) (? (& (== A "]") (== (: B 8) 2)) (' (u.color.get B 2 0) (u.color.tag (u.color.get B 2 1))) (c.empty)))
+    )
+    (?
+      (== (: B 8) 1)
+      (? (== A " ") (' (u.color.get B 1 0) (u.color.tag (u.color.get B 1 1)) " ") (? (== A "]") (c.empty) (u.color.get B 1 0)))
+      (u.color.get B 1 0)
+    )
+    (?
+      (== (: B 8) 0)
+      (? (== A " ") (c.empty) (' (u.color.get B 0 1) (? (!= A "[") (? (== A ">") " " A) "")))
+      (' (u.color.get B 0 1) (? (& (== A "]") (== (: B 8) 1)) (' (u.color.get B 1 0) (u.color.tag (u.color.get B 1 1))) (c.empty)))
+    )
+    
+    (?
+      (== (: B 8) 3)
+      (? (| (== A " ") (== A "]")) (: 0 8) (+ (, B 56 8) (!= A "[")))
+      (, B 56 8)
+    )
+    (?
+      (== (: B 8) 3)
+      (? (== A " ") (+ (, B 48 8) (c.getLengthSx (u.color.tag (u.color.get B 3 1))) 1) (? (== A "]") (: 0 8) (, B 48 8)))
+      (, B 48 8)
+    )
+    (?
+      (== (: B 8) 2)
+      (? (| (== A " ") (== A "]")) (: 0 8) (+ (, B 40 8) (!= A "[")))
+      (+ (, B 40 8) (? (& (== A "]") (== (: B 8) 3)) (+ (, B 48 8) (c.getLengthSx (u.color.tag (u.color.get B 3 1)))) 0))
+    )
+    (?
+      (== (: B 8) 2)
+      (? (== A " ") (+ (, B 32 8) (c.getLengthSx (u.color.tag (u.color.get B 2 1))) 1) (? (== A "]") (: 0 8) (, B 32 8)))
+      (, B 32 8)
+    )
+    (?
+      (== (: B 8) 1)
+      (? (| (== A " ") (== A "]")) (: 0 8) (+ (, B 24 8) (!= A "[")))
+      (+ (, B 24 8) (? (& (== A "]") (== (: B 8) 2)) (+ (, B 32 8) (c.getLengthSx (u.color.tag (u.color.get B 2 1)))) 0))
+    )
+    (?
+      (== (: B 8) 1)
+      (? (== A " ") (+ (, B 16 8) (c.getLengthSx (u.color.tag (u.color.get B 1 1))) 1) (? (== A "]") (: 0 8) (, B 16 8)))
+      (, B 16 8)
+    )
+    (?
+      (== (: B 8) 0)
+      (? (== A " ") (: 0 8) (+ (, B 8 8) (!= A "[")))
+      (+ (, B 8 8) (? (& (== A "]") (== (: B 8) 1)) (+ (, B 16 8) (c.getLengthSx (u.color.tag (u.color.get B 1 1)))) 0))
+    )
+    (- (+ (: B 8) (== A "[")) (== A "]"))
+  )
+}
+{u.color.get A B C; ; (, A (+ (< (u.color.sum (: A 64) (| (< B 1) C) 7) 4) 64) (< (, A (< (| (< B 1) C) 3) 8) 4))}
+{u.color.sum A 8 B C; ; (? (: C 8) (c.empty) (> C 8)); (' (? (>! B (: C 8)) (+ (> C 8) A) (: 0 8)) (- (: C 8) 1))}
+{u.color.tag A; ;
+  (?
+    (c.getLengthSx (c.splitSx A "+" 1))
+    (hb.tagCE "span" (u.color.recursion (c.splitSx A "+" 1)) (c.splitSx A "+" 0))
+    A
+  )
 }
 {u.color.recursion A; ; (? (# A) (hb.concatenateClass (u.color.recursion (> A 16)) (u.color.class (: A 16))) "")}
 {u.color.class A; ; (' "w" (- A $20))}

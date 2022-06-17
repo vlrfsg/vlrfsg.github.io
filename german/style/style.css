@@ -158,103 +158,442 @@ table.dWordTable td {
   height: 6ex;
 }
 
-.wR {
-  border-bottom: 2px dotted #F08040;
-}
 
-.wM, .wN, .wF, .wP, .wG, .wD, .wA {
+span.wM, span.wN, span.wF, span.wP, span.wG, span.wD, span.wA, span.wT, span.wK, span.wO, span.wL, span.wH, span.wC, span.wV, span.wQ, span.wR {
   border-radius: 0.5ex;
+  margin: 0.3ex 0;
   padding: 0 0.2em;
+  display: inline-block;
 }
 
 .wG {
   background-color: #A0A0A0;
   color: #F8FAFA;
 }
+span.wG:hover {
+  position: relative;
+}
+span.wG:hover:after {
+  content: '2格';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #A0A0A0;
+  color: #F8FAFA;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
+}
 
 .wD {
   background-color: #E0E0E0;
+}
+span.wD:hover {
+  position: relative;
+}
+span.wD:hover:after {
+  content: '3格';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #E0E0E0;
+  color: #202020;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
 }
 
 .wA {
   background-color: #707070;
   color: #F8FAFA;
 }
+span.wA:hover {
+  position: relative;
+}
+span.wA:hover:after {
+  content: '4格';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #707070;
+  color: #F8FAFA;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
+}
+
 
 .wM {
   background-color: #99FFFF;
+}
+span.wM:hover {
+  position: relative;
+}
+span.wM:hover:after {
+  content: '男1';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #99FFFF;
+  color: #202020;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
 }
 
 .wM.wG {
   background-color: #66CCFF;
   color: #F8FAFA;
 }
+span.wM.wG:hover {
+  position: relative;
+}
+span.wM.wG:hover:after {
+  content: '男2';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #66CCFF;
+  color: #F8FAFA;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
+}
 
 .wM.wD {
   background-color: #99BBFF;
+}
+span.wM.wD:hover {
+  position: relative;
+}
+span.wM.wD:hover:after {
+  content: '男3';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #99BBFF;
+  color: #202020;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
 }
 
 .wM.wA {
   background-color: #6666FF;
   color: #F8FAFA;
 }
+span.wM.wA:hover {
+  position: relative;
+}
+span.wM.wA:hover:after {
+  content: '男4';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #6666FF;
+  color: #F8FAFA;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
+}
+
 
 .wN {
   background-color: #CCFF99;
+}
+span.wN:hover {
+  position: relative;
+}
+span.wN:hover:after {
+  content: '中1';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #CCFF99;
+  color: #202020;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
 }
 
 .wN.wG {
   background-color: #80FF66;
   color: #202020;
 }
+span.wN.wG:hover {
+  position: relative;
+}
+span.wN.wG:hover:after {
+  content: '中2';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #80FF66;
+  color: #202020;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
+}
 
 .wN.wD {
   background-color: #99FFAA;
+}
+span.wN.wD:hover {
+  position: relative;
+}
+span.wN.wD:hover:after {
+  content: '中3';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #99FFAA;
+  color: #202020;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
 }
 
 .wN.wA {
   background-color: #66FFBB;
   color: #202020;
 }
+span.wN.wA:hover {
+  position: relative;
+}
+span.wN.wA:hover:after {
+  content: '中4';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #66FFBB;
+  color: #202020;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
+}
+
 
 .wF {
   background-color: #FF9999;
+}
+span.wF:hover {
+  position: relative;
+}
+span.wF:hover:after {
+  content: '女1';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #FF9999;
+  color: #202020;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
 }
 
 .wF.wG {
   background-color: #FF9966;
   color: #202020;
 }
+span.wF.wG:hover {
+  position: relative;
+}
+span.wF.wG:hover:after {
+  content: '女2';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #FF9966;
+  color: #202020;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
+}
 
 .wF.wD {
   background-color: #FFDD99;
+}
+span.wF.wD:hover {
+  position: relative;
+}
+span.wF.wD:hover:after {
+  content: '女3';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #FFDD99;
+  color: #202020;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
 }
 
 .wF.wA {
   background-color: #FFFF66;
   color: #202020;
 }
+span.wF.wA:hover {
+  position: relative;
+}
+span.wF.wA:hover:after {
+  content: '女4';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #FFFF66;
+  color: #202020;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
+}
+
 
 .wP {
   background-color: #CC99FF;
+}
+span.wP:hover {
+  position: relative;
+}
+span.wP:hover:after {
+  content: '複1';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #CC99FF;
+  color: #202020;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
 }
 
 .wP.wG {
   background-color: #E566FF;
   color: #F8FAFA;
 }
+span.wP.wG:hover {
+  position: relative;
+}
+span.wP.wG:hover:after {
+  content: '複2';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #E566FF;
+  color: #F8FAFA;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
+}
 
 .wP.wD {
   background-color: #FF99EE;
+}
+span.wP.wD:hover {
+  position: relative;
+}
+span.wP.wD:hover:after {
+  content: '複3';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #FF99EE;
+  color: #202020;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
 }
 
 .wP.wA {
   background-color: #FF66BB;
   color: #F8FAFA;
 }
+span.wP.wA:hover {
+  position: relative;
+}
+span.wP.wA:hover:after {
+  content: '複4';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  background-color: #FF66BB;
+  color: #F8FAFA;
+  border: 1px solid #202020;
+  border-radius: 0.5ex;
+  width: max-content;
+}
 
 
+span.wT, span.wK, span.wO, span.wL, span.wH, span.wC, span.wV, span.wQ, span.wR {
+  background-color: #F8FAFA;
+}
 
+.wT {
+  border-left: 2px solid #00AAEE;
+  border-right: 2px solid #00AAEE;
+}
+
+.wK {
+  border-left: 2px solid #66EE66;
+  border-right: 2px solid #66EE66;
+}
+
+.wO {
+  border-left: 2px solid #EE4422;
+  border-right: 2px solid #EE4422;
+}
+
+.wL {
+  border-left: 2px solid #CC22CC;
+  border-right: 2px solid #CC22CC;
+}
+
+.wH {
+  border-left: 2px solid #EEAA22;
+  border-right: 2px solid #EEAA22;
+}
+
+.wC {
+  border-left: 2px solid #CCCC22;
+  border-right: 2px solid #CCCC22;
+}
+
+.wV {
+  border-bottom: 2px solid #EEAAAA;
+  border-top: 2px solid #EEAAAA;
+}
+
+.wQ {
+  border-bottom: 2px solid #AAAAEE;
+  border-top: 2px solid #AAAAEE;
+}
+
+.wR {
+  border: 2px solid #88EEEE;
+}
+
+
+ span.wM:hover>span:hover:after, span.wN:hover>span:hover:after, span.wF:hover>span:hover:after, span.wP:hover>span:hover:after {
+  left: 2em;
+}
 
 
 
